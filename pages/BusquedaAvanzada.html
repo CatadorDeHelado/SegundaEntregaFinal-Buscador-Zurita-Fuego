@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda Avanzada</title>
+    <link rel="stylesheet" href="/style/styleSearch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img class="logo" src="../assets/logo.png" alt="Grito">
+    <h5 class="header">Busqueda Avanzada</h1>
+    <ul class="ul">
+        <li> <a href="./../index.html">Inicio</a> </li>
+        <li> <a href="./FormularioContacto.html">Contacto</a> </li>
+        <li> <a href="./Perfil.html">Perfil</a> </li>
+        <li> <a href="./Iframe.html">Populares</a> </li>
+     </ul>
+    
+        <div class="searcher">
+            <label> Nombre de la carta</label>
+            <input class="width_search_fields rounded" type="text" id="Nombre De Carta" />
+        </div>
+     
+        <div class="searcher1">
+            <label> Texto</label>
+            <input class="width_search_fields rounded" type="text" id="Texto" />
+        </div>   
+        
+        <div class="searcher2">
+            <label for="Tipo">Tipo de Carta</label>
+            <select class="width_search_fields rounded" id="Tipo">
+                <option value="none">Elija el tipo de carta</option>
+                <option value="Artefacto">Artefacto</option>
+                <option value="Conjuro">Conjuro</option>
+                <option value="Criatura">Criatura</option>
+                <option value="Encantamiento">Encantamiento</option>
+                <option value="Instantaneo">Instantaneo</option>
+                <option value="Planeswalker">Planeswalker</option>
+                <option value="Tierra">Tierra</option>
+                <option value="Tribal">Tribal</option>
+            </select>
+        </div>
+        <div class="searcher3">
+            <label  for="Color">Color de Carta</label>
+            <select id="Color">
+                <option value="none">Eliga la identidad de la carta</option>
+                <option value="Blanco">Blanco</option>
+                <option value="Azul">Azul</option>
+                <option value="Negro">Negro</option>
+                <option value="Rojo">Rojo</option>
+                <option value="Verde">Verde</option>
+                <option value="Incoloro">Incoloro</option>
+            </select>
+        </div>
+
+        <div class="searcher4">
+            <label for="Coste">Coste de Mana</label>
+            <select class="width_search_fields rounded" id="Coste">
+                <option value="none">Seleccione el costo de mana de la carta</option>
+                <option value="{W}">{W} – Un mana Blanco</option>
+                <option value="{U}">{U} – Un mana Azul</option>
+                <option value="{B}">{B} – Un mana Negro</option>
+                <option value="{R}">{R} – Un mana Rojo</option>
+                <option value="{G}">{G} – Un mana Verde</option>
+                <option value="{C}">{C} – Un mana Incoloro</option>
+                <option value="{X}">{X} – X mana generico</option>
+                <option value="{0}">{0} – Zero mana</option>
+                <option value="{1}">{1} – Un mana generico</option>
+                <option value="{2}">{2} – Dos manas genericos</option>
+                <option value="{3}">{3} – Tres manas genericos</option>
+                <option value="{4}">{4} – Cuatro manas genericos</option>
+                <option value="{5}">{5} – Cinco manas genericos</option>
+                <option value="{6}">{6} – Seis manas genericos</option>
+                <option value="{7}">{7} – Siete manas genericos</option>
+                <option value="{8}">{8} – Ocho manas genericos</option>
+                <option value="{9}">{9} – Nueve manas genericos</option>
+                <option value="{10}">{10} – Diez manas genericos</option>
+                <option value="{11}">{11} – Once manas genericos</option>
+                <option value="{12}">{12} – Doce manas genericos</option>
+                <option value="{13}">{13} – Trece manas genericos</option>  
+                <option value="{14}">{14} – Catorce manas genericos </option>
+            </select>
+        </div>
+
+        <div class="searcher5">
+            <p class="rarity_title">Rareza</p>
+            <div class="rarity_order">
+                <input type="checkbox" id="Rareza">Común</input>
+                <input type="checkbox" id="Rareza">Infrecuente</input>
+                <input type="checkbox" id="Rareza">Rara</input>
+                <input type="checkbox" id="Rareza">Rara Mítica</input>
+            </div>   
+        </div>
+        
+        <div class="searcher6">
+            <label for="Lenguaje">Lenguaje</label>
+            <select class="width_search_fields rounded" id="Tipo">
+                <option value="none">Elija el idoma de la carta</option>
+                <option value="Ingles">Ingles</option>
+                <option value="Español">Español</option>
+                <option value="Portugues">Portugués</option>
+                <option value="Japones">Japonés</option>
+                <option value="Ruso">Ruso</option>
+            </select>
+        </div>
+
+        <div class="button">
+            <input type="button" value="Buscar con estos parametros">
+        </div>
+    
+
+</body>
+
+</html>
