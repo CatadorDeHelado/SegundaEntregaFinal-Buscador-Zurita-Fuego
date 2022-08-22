@@ -171,18 +171,20 @@ body {
     .name{
         grid-area: name;
         display: flex;
+        flex-direction: column;
         width: 75%;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         
     }
 
     .email{
         grid-area: email;
         display: flex;
+        flex-direction: column;
         width: 75%;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .message{
