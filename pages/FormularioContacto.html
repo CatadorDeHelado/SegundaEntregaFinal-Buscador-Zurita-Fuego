@@ -9,41 +9,43 @@
   <link rel="stylesheet" href="/style/styleContact.css">
 </head>
 
-<body class="background"> 
-  <h1 class="title">Contacto</h1>
-  <div>
-    <ul>
-      <li> <a href="./../index.html">Inicio</a> </li>
-      <li> <a href="./BusquedaAvanzada.html">Busqueda Avanzada</a> </li>
-      <li> <a href="./Perfil.html">Perfil</a> </li>
-      <li> <a href="./Iframe.html">Populares</a> </li>
-    </ul>
+<body>
+  <img class="logo" src="../assets/logo.png" alt="logo">
+
+  <h4 class="header"> Encontrá tus cartas de MTG </h4>
+
+  <ul class="ul">
+    <li> <a href="./../index.html">Inicio</a> </li>
+    <li> <a href="./BusquedaAvanzada.html">Busqueda Avanzada</a> </li>
+    <li> <a href="./Perfil.html">Perfil</a> </li>
+    <li> <a href="./Iframe.html">Populares</a> </li>
+  </ul>
+
+  <div class="text">
+    <h5>Contactanos</h5>
+    <p>Dejanos tus datos, describinos tu consulta y nosotros te contactaremos a la brevedad</p>
   </div>
-  <form class = 'searcher' action="">
-    <div>
-      <label> Nombre:</label>
-      <input type="text" id="nombre" />
+
+    <div class="name">
+      <label> Nombre y Apellido</label>
+      <input class="border_radius backgorund_color_input" type="text" id="nombre" />
     </div>
-    <div>
-      <label> Apellidos:</label>
-      <input type="text" id="apellidos" />
+
+    <div class="email">
+      <label> E-mail</label>
+      <input class="border_radius backgorund_color_input" type="email" id="email" />
     </div>
-    <div>
-      <label> E-mail:</label>
-      <input type="email" id="email" />
+
+    <div class="message">
+      <textarea class="border_radius backgorund_color_input">Escriba su consulta aqui</textarea>
     </div>
-    <div>
-      <textarea>Escriba su consulta aqui</textarea>
+
+    <div class="button">
+      <input class="border_radius backgorund_color_button" type="submit" value="Enviar" />
     </div>
-    <div>
-      <input type="submit" value="Enviar" />
-      <input type="reset" value="Resetear" />
-    </div>
-  </form>
-  <footer>
-    <p>Autor: Estanislao Zurita Fuego</p>
-    <a target="_blank" href=https://www.instagram.com/catadordehelado>Redes</a>
-  </footer>
+
+    
+
 </body>
 
 </html>
