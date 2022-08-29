@@ -4,13 +4,16 @@
 }
 
 body {
-    height: 100%;
-    background: linear-gradient(180deg, #0BD3E0 0%, #070E34 67.19%);
+    height: 100vh;
+    background: linear-gradient(180deg, #0BD3E0 0%, #070E34 32.19%);
     color: #E0F3F5;
+    padding-left: 5vh;
+    padding-top: 5vh;
     display: grid;
+    font-family: 'DM Sans', sans-serif;
     grid-gap: 5px;
     grid-template-columns: 72px 1fr 2fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 3fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
     grid-template-areas:
         "logo header nav"
         "searcher searcher searcher"
@@ -27,10 +30,10 @@ body {
 
 .logo {
     grid-area: logo;
-    width: 75%;
+    display: flex;
+    width: 175%;
     align-items: center;
-    justify-content: center;
-    margin-left: 5px;
+    justify-content: center;   
     
 }
 
@@ -39,9 +42,11 @@ body {
     display: flex;
     gap: 20px;
     margin-top: 15px;
+    font-size: 30px;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-end;
+    
 }
 
 
@@ -49,62 +54,73 @@ body {
 .ul {
     grid-area: nav;
     display: flex;
+    font-size: 24px;
+    padding-top: 22px;
     flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    gap: 10px;
+    justify-content: space-evenly;
+    list-style: none;   
+   
 }
 .searcher {
     grid-area: searcher;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+    font-size: 24px;
+    justify-content: flex-start;
 }
 .searcher1 {
     grid-area: searcher1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    gap: 185px;
+    font-size: 24px;
+    justify-content: flex-start;
 }
 
 .searcher2 {
     grid-area: searcher2;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    gap: 95px;
+    font-size: 24px;
+    justify-content: flex-start;
 }
 
 .searcher3 {
     grid-area: searcher3;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    gap: 85px;
+    font-size: 24px;
+    justify-content: flex-start;    
 }
 
 .searcher4 {
     grid-area: searcher4;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    gap: 77px;
+    font-size: 24px;
+    justify-content: flex-start;
 }
 
 .searcher5 {
     grid-area: searcher5;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 175px;
+    font-size: 24px;
+    justify-content: flex-start;
 }
 
 .searcher6 {
     grid-area: searcher6;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    gap: 145px;
+    font-size: 24px;
+    justify-content: flex-start;
 }
 
 .search_bar {
@@ -131,24 +147,39 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
 }
 .width_search_fields{
-    width: 75%;
+    width: 50%;
+    height: 50%;
 }
 .rounded{
     border-radius: 15px;
 }
+
+.fill {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+.text_color{
+   color: #cdcdcd;
+}
 @media screen and (max-width: 480px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
     body {
         height: 100%;
         background: linear-gradient(180deg, #0BD3E0 0%, #070E34 67.19%);
         color: #E0F3F5;
         display: grid;
+        font-family: 'DM Sans', sans-serif;
         grid-gap: 5px;
-        margin-top: 15px;
-        grid-template-columns: 72px 1fr 72px;
-        grid-template-rows: 2fr 2fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 2fr;
+        padding-top: 3vh;
+        padding-left: 3vh;
+        grid-template-columns: 72px 1fr 1fr;
+        grid-template-rows: repeat(10,10vh);
         grid-template-areas:
             "logo header header"
             "nav nav nav "
@@ -165,86 +196,96 @@ body {
 
     .logo {
         grid-area: logo;
-        width: 75%;
+        display: flex;
+        width: 100%;
         align-items: center;
-        justify-content: center;
-        margin-left: 5px;
+        justify-content: center;   
         
     }
-
+    
     .header {
         grid-area: header;
         display: flex;
-        gap: 20px;
-        margin-top: 15px;
+        font-size: 18px;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: center;        
     }
-
-
+    
+    
     
     .ul {
         grid-area: nav;
         display: flex;
+        font-size: 100%;
+        padding-top: 22px;
         flex-direction: row;
-        justify-content: center;
-        list-style: none;
-        gap: 10px;
+        justify-content: space-evenly;
+        list-style: none;   
+       
     }
     .searcher {
         grid-area: searcher;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        font-size: 12px;
+        justify-content: flex-start;
         align-items: center;
-        justify-content: center;
     }
     .searcher1 {
         grid-area: searcher1;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;        
+        font-size: 12px;
+        justify-content: flex-start;
         align-items: center;
-        justify-content: center;
     }
-
+    
     .searcher2 {
         grid-area: searcher2;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;        
+        font-size: 12px;
+        justify-content: flex-start;
         align-items: center;
-        justify-content: center;
     }
-
+    
     .searcher3 {
         grid-area: searcher3;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        flex-direction: row;       
+        font-size: 12px;
+        justify-content: flex-start;  
+        align-items: center;  
     }
-
+    
     .searcher4 {
         grid-area: searcher4;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;       
+        font-size: 12px;
+        justify-content: flex-start;
         align-items: center;
-        justify-content: center;
     }
-
+    
     .searcher5 {
         grid-area: searcher5;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;        
+        font-size: 12px;
+        justify-content: flex-start;
+        align-items: center;
     }
-
+    
     .searcher6 {
         grid-area: searcher6;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        font-size: 12px;
+        justify-content: flex-start;
         align-items: center;
-        justify-content: center;
     }
-
+    
     .search_bar {
             width: 50vh;
     }
@@ -255,25 +296,31 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: center; 
+
     }
     
     .rarity_title{
         display: flex;
-        grid-area: searcher5;
         align-items: center;
         justify-content: center;
     }
     .rarity_order{
         display: flex;
-        grid-area: searcher5;
         flex-direction: row;
-        margin-left: 10%;
-        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
     }
-    .width_search_fields{
-        width: 75%;
-    }
+    
     .rounded{
         border-radius: 15px;
+    }
+
+    .fill {
+        background-color: rgba(255, 255, 255, 0.18);
+    }
+    
+    .text_color{
+       color: #cdcdcd;
     }
 }

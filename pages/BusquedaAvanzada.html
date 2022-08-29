@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busqueda Avanzada</title>
-    <link rel="stylesheet" href="/style/styleSearch.css">
+    <link rel="stylesheet" href="../style/styleSearch.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 
 <body>
     <img class="logo" src="../assets/logo.png" alt="Grito">
-    <h5 class="header">Busqueda Avanzada</h1>
+    <h5 class="header">Encontrá tus cartas MTG</h1>
     <ul class="ul">
         <li> <a href="./../index.html">Inicio</a> </li>
         <li> <a href="./FormularioContacto.html">Contacto</a> </li>
@@ -24,17 +24,17 @@
     
         <div class="searcher">
             <label> Nombre de la carta</label>
-            <input class="width_search_fields rounded" type="text" id="Nombre De Carta" />
+            <input class="width_search_fields rounded fill text_color" type="text" id="NombreDeCarta" />
         </div>
      
         <div class="searcher1">
             <label> Texto</label>
-            <input class="width_search_fields rounded" type="text" id="Texto" />
+            <input class="width_search_fields rounded fill  text_color" type="text" id="Texto" />
         </div>   
         
         <div class="searcher2">
             <label for="Tipo">Tipo de Carta</label>
-            <select class="width_search_fields rounded" id="Tipo">
+            <select class="width_search_fields rounded fill text_color" id="Tipo">
                 <option value="none">Elija el tipo de carta</option>
                 <option value="Artefacto">Artefacto</option>
                 <option value="Conjuro">Conjuro</option>
@@ -48,7 +48,7 @@
         </div>
         <div class="searcher3">
             <label  for="Color">Color de Carta</label>
-            <select id="Color">
+            <select class="width_search_fields rounded fill text_color" id="Color">
                 <option value="none">Eliga la identidad de la carta</option>
                 <option value="Blanco">Blanco</option>
                 <option value="Azul">Azul</option>
@@ -61,7 +61,7 @@
 
         <div class="searcher4">
             <label for="Coste">Coste de Mana</label>
-            <select class="width_search_fields rounded" id="Coste">
+            <select class="width_search_fields rounded fill text_color" id="Coste">
                 <option value="none">Seleccione el costo de mana de la carta</option>
                 <option value="{W}">{W} – Un mana Blanco</option>
                 <option value="{U}">{U} – Un mana Azul</option>
@@ -89,8 +89,8 @@
         </div>
 
         <div class="searcher5">
-            <p class="rarity_title">Rareza</p>
-            <div class="rarity_order">
+            <p>Rareza</p>
+            <div class="rarity_order rounded">
                 <input type="checkbox" id="Rareza">Común</input>
                 <input type="checkbox" id="Rareza">Infrecuente</input>
                 <input type="checkbox" id="Rareza">Rara</input>
@@ -100,7 +100,7 @@
         
         <div class="searcher6">
             <label for="Lenguaje">Lenguaje</label>
-            <select class="width_search_fields rounded" id="Tipo">
+            <select class="width_search_fields rounded fill  text_color" id="Tipo">
                 <option value="none">Elija el idoma de la carta</option>
                 <option value="Ingles">Ingles</option>
                 <option value="Español">Español</option>
